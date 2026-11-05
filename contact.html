@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>聯絡我們｜和甜涼糕</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Noto Sans TC", sans-serif;
+      background: #fffaf7;
+      color: #4b2929;
+    }
+
+    header {
+      background: #7b1725;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      letter-spacing: 4px;
+    }
+
+    nav {
+      background: white;
+      padding: 16px;
+      text-align: center;
+    }
+
+    nav a {
+      color: #7b1725;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 650px;
+      margin: 40px auto;
+      padding: 30px;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 5px 20px #0000000d;
+    }
+
+    h2 {
+      text-align: center;
+      color: #7b1725;
+    }
+
+    .intro {
+      text-align: center;
+      color: #777;
+      margin-bottom: 30px;
+    }
+
+    label {
+      display: block;
+      margin: 18px 0 8px;
+      font-weight: bold;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+
+    textarea {
+      height: 150px;
+      resize: vertical;
+    }
+
+    button {
+      width: 100%;
+      margin-top: 25px;
+      padding: 15px;
+      background: #7b1725;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 17px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #9b3442;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #888;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>和甜涼糕</h1>
+  <p>一口軟糯，甜進心裡</p>
+</header>
+
+<nav>
+  <a href="index.html">首頁</a>
+  <a href="about.html">公司介紹</a>
+  <a href="contact.html">聯絡我們</a>
+</nav>
+
+<div class="container">
+  <h2>聯絡我們</h2>
+
+  <p class="intro">
+    有任何問題或合作需求，歡迎填寫以下表單與我們聯絡。
+  </p>
+
+  <form action="https://formsubmit.co/51001139@gm.chihlee.edu.tw"
+        method="POST">
+
+    <input type="hidden" name="_subject"
+           value="和甜涼糕網站－收到新的聯絡表單">
+
+    <input type="hidden" name="_template"
+           value="table">
+
+    <label for="name">姓名</label>
+    <input type="text" id="name" name="姓名"
+           placeholder="請輸入您的姓名" required>
+
+    <label for="phone">電話</label>
+    <input type="tel" id="phone" name="電話"
+           placeholder="請輸入您的電話" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="Email"
+           placeholder="請輸入您的電子信箱" required>
+
+    <label for="message">聯絡內容</label>
+    <textarea id="message" name="聯絡內容"
+              placeholder="請輸入您的訊息" required></textarea>
+
+    <button type="submit">送出聯絡表單</button>
+
+  </form>
+</div>
+
+<footer>
+  © 和甜涼糕｜感謝您的來信
+</footer>
+
+</body>
+</html>
